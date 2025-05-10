@@ -1,3 +1,10 @@
+---
+
+## 📲 Contato
+
+[![Instagram](https://img.shields.io/badge/INSTAGRAM-pink?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/thiago.aires_/)
+[![Gmail](https://img.shields.io/badge/GMAIL-333333?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kbyteow@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thiago-assunção-aires-moreira-b45091305)
 # Menu de Tarefas em Python 📝
 
 Este projeto é uma aplicação simples de terminal para gerenciamento de tarefas. Foi desenvolvido em Python como exercício prático de lógica de programação, entrada de dados e controle de fluxo.
@@ -11,8 +18,6 @@ Este projeto é uma aplicação simples de terminal para gerenciamento de tarefa
 - Interface por terminal com menu interativo
 
 ## 📂 Estrutura
-
-
 projeto1/
 ├── src/
 │ └── menu_tarefas.py # Código principal da aplicação
@@ -21,6 +26,8 @@ projeto1/
 ├── .gitignore # Ignora arquivos desnecessários ao versionamento
 ├── README.md # Descrição do projeto
 └── requirements.txt # Dependências (vazio por enquanto)
+
+
 
 ## ▶️ Como Executar
 
