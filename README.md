@@ -4,7 +4,8 @@
 
 [![Instagram](https://img.shields.io/badge/INSTAGRAM-pink?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/thiago.aires_/)
 [![Gmail](https://img.shields.io/badge/GMAIL-333333?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kbyteow@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thiago-assunção-aires-moreira-b45091305)
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thiago-assuncao-aires-moreira)
+
 # Menu de Tarefas em Python 📝
 
 Este projeto é uma aplicação simples de terminal para gerenciamento de tarefas. Foi desenvolvido em Python como exercício prático de lógica de programação, entrada de dados e controle de fluxo.
