@@ -1,49 +1,46 @@
 tarefas = []
 
 def mostrar_menu():
-    print("\n=== Menu de Tarefas ===")
+    print("\n=== Menu ===")
     print("1. Adicionar tarefa")
-    print("2. Listar tarefas")
+    print("2. Ver tarefas")
     print("3. Concluir tarefa")
     print("4. Remover tarefa")
     print("5. Sair")
 
-def listar_tarefas():
+def ver_tarefas():
     if not tarefas:
-        print("Nenhuma tarefa encontrada.")
+        print("Nenhuma tarefa.")
     else:
         for i, tarefa in enumerate(tarefas):
-            status = "[✔]" if tarefa["concluida"] else "[ ]"
-            print(f"{i + 1}. {status} {tarefa['descricao']}")
+            status = "✔" if tarefa["feito"] else " "
+            print(f"{i + 1}. [{status}] {tarefa['texto']}")
 
 while True:
     mostrar_menu()
-    opcao = input("Escolha uma opção (1-5): ")
+    opcao = input("Escolha (1-5): ")
 
     if opcao == "1":
-        desc = input("Digite a nova tarefa: ")
-        tarefas.append({"descricao": desc, "concluida": False})
-        print("Tarefa adicionada com sucesso.")
+        texto = input("Tarefa: ")
+        tarefas.append({"texto": texto, "feito": False})
 
     elif opcao == "2":
-        listar_tarefas()
+        ver_tarefas()
 
     elif opcao == "3":
-        listar_tarefas()
-        num = int(input("Digite o número da tarefa concluída: "))
-        if 0 < num <= len(tarefas):
-            tarefas[num - 1]["concluida"] = True
-            print("Tarefa marcada como concluída.")
-        else:
+        ver_tarefas()
+        try:
+            num = int(input("Número da tarefa concluída: "))
+            tarefas[num - 1]["feito"] = True
+        except:
             print("Número inválido.")
 
     elif opcao == "4":
-        listar_tarefas()
-        num = int(input("Digite o número da tarefa a remover: "))
-        if 0 < num <= len(tarefas):
+        ver_tarefas()
+        try:
+            num = int(input("Número da tarefa a remover: "))
             tarefas.pop(num - 1)
-            print("Tarefa removida.")
-        else:
+        except:
             print("Número inválido.")
 
     elif opcao == "5":
